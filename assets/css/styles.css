@@ -1,27 +1,18 @@
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+:root{
+    --borders-color: #EAECEE;
+	--borders-dark-color: #D5D8DC;
+	--height-icons: 3vw;
+	--width-icons: 3vw;
+	--search-text-color: hsl(0, 0%, 6.7%);
+	--hover-background: rgba(0, 0, 0, 0.05);
+	--active-background: #ccc;
+	--height-circles: 3vw;
+	--width-circles: 3vw;
+    --font-size-16px: 16px;
 }
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-}
-
-.icon-plus-square-o {
-    width: 0.7861328125em;
-}
-
-.icon-menu{
-	height: 1.5vw;
-	width: 1.5vw;
+*{
+	font-family: 'Roboto', sans-serif;
 }
 
 .cursor-pointer{
@@ -32,7 +23,59 @@
 	background: var(--active-background);
 }
 
-.circles{
-    height: 8vw;
-    width: 8vw;
+.lateral-menu{
+    font-size: var(--font-size-16px);
+}
+
+.lateral-bar-menus{
+    width: 19vw;
+    border-right: 1px solid #ccc;
+}
+
+#logo{
+    padding: 3vw 0 0vw 3vh;
+}
+
+.instagram-logo{
+    height: 6vh;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icon {
+    display: inline-block;
+    /*width: 1em;
+    height: 1em;*/
+    width: 2vw;
+    height: 4vh;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.icon-plus-square-o {
+    width: 0.7861328125em;
+}
+
+.icon-menu{
+	height: 5vh;
+	width: 3vw;
+}
+
+.cursor-pointer{
+	cursor: pointer;
+}
+
+.cursor-pointer:active{
+	background: var(--active-background);
+}
+
+.img-profile-menu{
+    border-radius: 50%;
 }

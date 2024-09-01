@@ -165,3 +165,42 @@
     right: 0;
     width: 24.8vw;
 }
+
+.size-img-profile{
+    height: 6.5vh;
+	width: 3.5vw;
+    border: 1px solid red;
+}
+
+.img-profile{
+    margin-left: -1px;
+    margin-top: -1px;
+    border-color: blue;
+}
+
+.accounts-list{
+    font-size: 14px;
+    list-style-type: none;
+    padding: 27px 0 0 0;
+}
+
+.accounts-list li{
+    display: var(--display-flex);
+}
+
+.accounts-list li > div{
+    width: 92%;
+    display: var(--display-flex);
+    flex-direction: row;
+    align-items: var(--align-items-flex-start);
+	gap: var(--gap-1vw);
+    padding: var(--padding-0);
+    border: 1px solid green;
+}
+
+.name{
+    position: relative;
+    top: 15px;
+    right: 109px;
+    border: 1px solid brown;
+}

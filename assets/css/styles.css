@@ -196,11 +196,16 @@
 	gap: var(--gap-1vw);
     padding: var(--padding-0);
     border: 1px solid green;
+    position: relative;
 }
 
-.name{
+/*.username{
     position: relative;
-    top: 15px;
-    right: 109px;
+}*/
+
+.name{
+    position: absolute;
+    top: 14px;
+    left: 60px;
     border: 1px solid brown;
 }

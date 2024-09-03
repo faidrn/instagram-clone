@@ -169,13 +169,11 @@
 .size-img-profile{
     height: 6.5vh;
 	width: 3.5vw;
-    border: 1px solid red;
 }
 
 .img-profile{
     margin-left: -1px;
     margin-top: -1px;
-    border-color: blue;
 }
 
 .accounts-list{
@@ -195,17 +193,21 @@
     align-items: var(--align-items-flex-start);
 	gap: var(--gap-1vw);
     padding: var(--padding-0);
-    border: 1px solid green;
     position: relative;
 }
-
-/*.username{
-    position: relative;
-}*/
 
 .name{
     position: absolute;
     top: 14px;
-    left: 60px;
-    border: 1px solid brown;
+    left: 57px;
+}
+
+.follow{
+    margin-left: 82px;
+}
+
+.suggested-for-you{
+    border: 1px solid red;
+    display: var(--display-flex);
+    flex-direction: row;
 }

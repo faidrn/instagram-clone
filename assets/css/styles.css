@@ -13,6 +13,7 @@
 	--align-items-flex-start: flex-start;
 	--gap-1vw: 1vw;
     --padding-0: 0;
+    --dark-gray: #7B7D7D;
 }
 
 *{
@@ -159,7 +160,6 @@
 
 /* menu lateral derecho */
 .right-accounts{
-    border: 1px solid blue;
     position: absolute;
     top: 0;
     right: 0;
@@ -174,6 +174,7 @@
 .img-profile{
     margin-left: -1px;
     margin-top: -1px;
+    border: 0.1px solid #D0D3D4;
 }
 
 .accounts-list{
@@ -192,22 +193,78 @@
     flex-direction: row;
     align-items: var(--align-items-flex-start);
 	gap: var(--gap-1vw);
-    padding: var(--padding-0);
+    padding: 0 0 10px 0;
     position: relative;
+}
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.username{
+    color: #000;
 }
 
 .name{
     position: absolute;
     top: 14px;
     left: 57px;
+    color: var(--dark-gray);
 }
 
 .follow{
     margin-left: 82px;
+    color:#03A9F4;/*#29B6F6;*/
+    font-weight: 500;
+}
+
+.follow:hover{
+    background: none;
+    color: #0000CD;
 }
 
 .suggested-for-you{
-    border: 1px solid red;
+    flex-wrap: wrap;
     display: var(--display-flex);
     flex-direction: row;
+    align-content: space-between;
+    padding: 2px 0 2px 0;
+    gap: 10.4vw;
+    font-weight: 700;
+}
+
+.suggested-for-you p{
+    color: var(--dark-gray);/*#ABB2B9;*/
+}
+
+.suggested-for-you a > p{
+    color: #000;/*#ABB2B9;*/
+}
+
+.suggested-for-you a > p:hover{
+    color: Silver;
+}
+
+.footer{
+    font-size: 12px;
+    color: #A6ACAF;
+}
+
+.footer p > a{
+    text-decoration: none;
+    color: #A6ACAF;
+}
+
+.footer p > a:hover{
+    text-decoration: underline;
+}
+
+.footer p > span{
+    font-size: 19px;
+    position: relative;
+    top: -2px;
+}
+
+.copyright{
+    padding-top: 12px;
 }

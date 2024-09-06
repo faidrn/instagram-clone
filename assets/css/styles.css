@@ -155,7 +155,7 @@
     position: absolute;
     top: 0;
     left: 19vw;
-    width: 56vw;
+    width: 52vw;
 }
 
 /* menu lateral derecho */
@@ -163,7 +163,12 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 24.8vw;
+    width: 29vw;
+    background: white;
+}
+
+.suggested-accounts{
+    margin-left: 5vw;
 }
 
 .size-img-profile{
@@ -248,6 +253,7 @@
 .footer{
     font-size: 12px;
     color: #A6ACAF;
+    margin-left: 5vw;
 }
 
 .footer p > a{
@@ -267,4 +273,13 @@
 
 .copyright{
     padding-top: 12px;
+}
+
+.for-you{
+    border: 1px solid blue;
+    width: 50vw;
+    font-weight: 700;
+    display: var(--display-flex);
+    flex-direction: row;
+    gap: 12px;
 }

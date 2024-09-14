@@ -24,33 +24,39 @@
     cursor: pointer;
 }
 
-/*.cursor-pointer:active{
-	background: #ccc;
+/*.cursor-pointer:hover{
+    background: #EBEDEF;
 }*/
 
-.cursor-pointer:hover{
-    background: #EBEDEF;
+a{
+    text-decoration: none;
 }
 
 .lateral-menu{
-    font-size: var(--font-size-16px);
+    font-size: 16px;
     list-style-type: none;
     padding: 18px;
 }
 
 .lateral-menu li{
-    display: var(--display-flex);
+    display: flex;
     border-radius: 9px;
 }
 
-.lateral-menu li > div{
+.lateral-menu li:hover, 
+#hamburguer-button:hover{
+    background: #EBEDEF;
+}
+
+.lateral-menu li > a{
     width: 93%;
-    display: var(--display-flex);
+    display: flex;
     flex-direction: row;
     align-items: var(--align-items-flex-start);
-	gap: var(--gap-1vw);
-    padding: var(--padding-0);
+	gap: 1vw;
+    padding: 0;
     margin-left: 12px;
+    color: #000;
 }
 
 .lateral-bar-menus{
@@ -65,14 +71,6 @@
 .instagram-logo{
     height: 6vh;
 }
-
-/*.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}*/
 
 .icon {
     display: inline-block;
@@ -113,14 +111,15 @@
     border-radius: 9px;
 }
 
-#hamburguer-button div{
-    display: var(--display-flex);
-	align-items: var(--align-items-flex-start);
-	gap: var(--gap-1vw);
-    padding: var(--padding-0);
+#hamburguer-button a{
+    display: flex;
+	align-items: flex-start;
+	gap: 1vw;
+    padding: 0;
     width: 93%;
     flex-direction: row;
     margin-left: 12px;
+    color: #000;
 }
 
 .notifications-messages{
@@ -189,43 +188,52 @@
 }
 
 .accounts-list li{
-    display: var(--display-flex);
+    display: flex;
 }
 
 .accounts-list li > div{
     width: 92%;
     display: var(--display-flex);
     flex-direction: row;
-    align-items: var(--align-items-flex-start);
-	gap: var(--gap-1vw);
+    align-items: flex-start;
+	gap: 1vw;
     padding: 0 0 10px 0;
     position: relative;
 }
 
-.text-decoration-none{
-    text-decoration: none;
+.position-username{
+    margin-top: -7px;
 }
+
+/*.text-decoration-none{
+    text-decoration: none;
+}*/
 
 .username{
     color: #000;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .name{
     position: absolute;
-    top: 14px;
+    top: 10px;
     left: 57px;
     color: var(--dark-gray);
 }
 
 .follow{
-    margin-left: 82px;
     color:#03A9F4;/*#29B6F6;*/
     font-weight: 500;
 }
 
+.position-follow{
+    margin-left: 82px;
+}
+
 .follow:hover{
     background: none;
-    color: #0000CD;
+    color: #025eb3;
 }
 
 .suggested-for-you{
@@ -257,7 +265,7 @@
 }
 
 .footer p > a{
-    text-decoration: none;
+    /*text-decoration: none;*/
     color: #A6ACAF;
 }
 
@@ -297,7 +305,6 @@
     margin-left: 2px;
     display: var(--display-flex);
     gap: 1vw;
-    border: 1px solid blue;
 }
 
 .story{
@@ -353,6 +360,7 @@
     height: 11.2vh;
     width: 6.3vw;
     border: 1px solid #D0D3D4;
+    object-fit: cover;
 }
 
 .back-icon{
@@ -384,4 +392,106 @@
 
 .hidden {
     visibility: hidden;
+}
+
+.posts{
+    width: 500px;
+    margin-left: 75px;
+    margin-top: 25px;
+    border:1px solid lightsalmon;
+}
+
+.post-header{
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    padding: 2px 0 2px 0;
+    font-size: 14px;
+    position: relative;
+}
+
+.size-colorful-border-post{
+    height: 40px;
+    width: 40px;
+    margin-top: 2px;
+}
+
+.size-white-border-post{
+    height: 30px;
+    width: 30px;
+}
+
+.size-colorful-border-post img{
+    height: 30px;
+    width: 30px;
+}
+
+.post-header-text{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    margin-left: 10px;
+    margin-top: -7px;
+}
+
+.points{
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: var(--dark-gray);
+}
+
+.more-options{
+    margin-left: 255px;
+}
+
+.song-location{
+    position: absolute;
+    bottom: -8px;
+    left: 50px;
+    font-size: 13px;
+}
+
+.post{
+    background: orange;
+}
+
+video{
+    width: 100%;
+    height: 550px;
+}
+
+.icons-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.tags{
+    margin-left: 10px;
+}
+
+.tags-bg{
+    width: 25px;
+    height: 25px;
+    background: #1C1C1E;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.icons-post svg{
+    width: 16px;
+    fill: white;
+    color: white;
+}
+
+.volume svg{
+    width: 14px;
+}
+
+.volume{
+    right: 10px;
+    align-content: center;
 }

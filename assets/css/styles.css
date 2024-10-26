@@ -1,19 +1,11 @@
 :root{
-    /*--borders-color: #EAECEE;*/
-	/*--borders-dark-color: #D5D8DC;*/
-	/*--height-icons: 3vw;
-	--width-icons: 3vw;
-	--search-text-color: hsl(0, 0%, 6.7%);
-	--hover-background: rgba(0, 0, 0, 0.05);
-	--active-background: #ccc;
-	--height-circles: 3vw;
-	--width-circles: 3vw;*/
     --font-size-16px: 16px;
     --display-flex: flex;
 	--align-items-flex-start: flex-start;
 	--gap-1vw: 1vw;
     --padding-0: 0;
     --dark-gray: #7B7D7D;
+    --light-shade-of-grey: #ccc;
 }
 
 *{
@@ -61,7 +53,7 @@ a{
 
 .lateral-bar-menus{
     width: 19vw;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid var(--light-shade-of-grey);
 }
 
 #logo{
@@ -283,7 +275,7 @@ a{
 }
 
 .for-you{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--light-shade-of-grey);
     width: 50vw;
     font-weight: 700;
     display: var(--display-flex);
@@ -598,4 +590,15 @@ form{
 .emojis svg{
     height: 18px;
     width: 18px;
+}
+
+.search-form{
+    height: 100%;
+    width: 390px;
+    position: absolute;
+    border-radius: 0 15px 15px 0;
+    border: 1px solid var(--light-shade-of-grey);
+    top: -1px;
+    left: 65px;
+    background: white;
 }

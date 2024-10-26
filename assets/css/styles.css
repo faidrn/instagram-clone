@@ -553,6 +553,7 @@ video{
     font-size: 15px;
     text-align: justify;
     margin-top: 6px;
+    border-bottom: 1px solid var(--dark-gray);
 }
 
 .description{
@@ -562,7 +563,35 @@ video{
     margin: 0;
 }
 
-#show-more{
+#show-more, 
+.comments{
     margin: 0;
     color: var(--dark-gray);
+}
+
+#show-more{
+    padding: 2px 0 2px 0;
+}
+
+.comments{
+    padding: 4px 0 4px 0;
+}
+
+form{
+    padding: 0px 0 4px 0;
+}
+
+#comment{
+    width: 85%;
+    border: none;
+}
+
+.btn-post{
+    border: none;
+    background: none;
+}
+
+.emojis svg{
+    height: 19px;
+    width: 19px;
 }

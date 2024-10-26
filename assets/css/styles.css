@@ -150,7 +150,6 @@ a{
 
 /* parte principal*/
 .main{
-    border: 1px solid red;
     position: absolute;
     top: 0;
     left: 19vw;
@@ -223,7 +222,7 @@ a{
 }
 
 .follow{
-    color:#03A9F4;/*#29B6F6;*/
+    color:rgb(0, 149, 246);/*#03A9F4;*/
     font-weight: 500;
 }
 
@@ -233,7 +232,7 @@ a{
 
 .follow:hover{
     background: none;
-    color: #025eb3;
+    color: #00274d;/*#025eb3;*/
 }
 
 .suggested-for-you{
@@ -398,7 +397,6 @@ a{
     width: 500px;
     margin-left: 75px;
     margin-top: 25px;
-    border:1px solid lightsalmon;
 }
 
 .post-header{
@@ -454,7 +452,7 @@ a{
 
 .post{
     cursor: pointer;
-    background: orange;
+    background: black;
 }
 
 video{
@@ -467,7 +465,6 @@ video{
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    border: 1px solid red;
 }
 
 .tags{
@@ -505,7 +502,6 @@ video{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
 }
 
 .right-icons{
@@ -514,14 +510,12 @@ video{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid blue;
 }
 
 .likes{
     margin-top: 12px;
     width: 100%;
     height: 26px;
-    border: 1px solid green;
 }
 
 .img-like{
@@ -578,20 +572,30 @@ video{
 }
 
 form{
-    padding: 0px 0 4px 0;
+    padding: 0px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #comment{
     width: 85%;
     border: none;
+    resize: none;
+}
+
+#comment:focus{
+    outline-width: 0;
 }
 
 .btn-post{
     border: none;
-    background: none;
+    background: transparent;
+    font-weight: 700;
+    color: rgb(0, 149, 246);
 }
 
 .emojis svg{
-    height: 19px;
-    width: 19px;
+    height: 18px;
+    width: 18px;
 }

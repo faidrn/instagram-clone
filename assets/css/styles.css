@@ -64,6 +64,13 @@ a{
     height: 6vh;
 }
 
+.instagram-icon svg{
+    height: 25px;
+    position: absolute;
+    top: 44px;
+    left: 25px;
+}
+
 .icon {
     display: inline-block;
     width: 2vw;
@@ -599,6 +606,18 @@ form{
     border-radius: 0 15px 15px 0;
     border: 1px solid var(--light-shade-of-grey);
     top: -1px;
-    left: 65px;
+    left: 75px;/*65px;*/
     background: white;
+}
+
+.search-form h1{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.list-search{
+    top: 180px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid var(--light-shade-of-grey);
 }

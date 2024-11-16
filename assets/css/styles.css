@@ -54,10 +54,37 @@ a{
 .lateral-bar-menus{
     width: 19vw;
     border-right: 1px solid var(--light-shade-of-grey);
+    background: white;
+    position: relative; /* Necesario para que z-index funcione */
+    z-index: 2; /* Mayor prioridad */
+}
+
+.shrink-lateral-bar-menus{
+    animation: shrink-width 1s ease-out forwards;
+    /*El valor forwards indica que el elemento mantendrá el estado alcanzado en el último fotograma de la animación.*/
+    /*la propiedad ease-out suaviza los cambios al final de la animación
+    Comienza rápido y se desacelera gradualmente hacia el final.
+    Da la sensación de que el objeto "frena" al completar la animación*/
+}
+
+@keyframes shrink-width {
+    0% {
+        width: 19vw;
+    }
+    50% {
+        width: 11vw;
+    }
+    100% {
+        width: 6.3vw;
+    }
 }
 
 #logo{
     padding: 3vw 0 0vw 3vh;
+}
+
+.border-gray{
+    border: 1px solid var(--light-shade-of-grey);
 }
 
 .instagram-logo{
@@ -68,7 +95,7 @@ a{
     height: 25px;
     position: absolute;
     top: 44px;
-    left: 25px;
+    left: 27px;
 }
 
 .icon {
@@ -601,13 +628,31 @@ form{
 
 .search-form{
     height: 100%;
-    width: 390px;
+    width: 385px;
     position: absolute;
     border-radius: 0 15px 15px 0;
     border: 1px solid var(--light-shade-of-grey);
     top: -1px;
-    left: 75px;/*65px;*/
+    left: -310px;/*75px;*/
     background: white;
+    z-index: 1; /* Menor prioridad, se ve por debajo de z-index:2 */
+    box-shadow: 3px 1px 10px #A6ACAF;
+}
+
+.move-right-search-form{
+    animation: move-right 1s ease-out forwards;
+}
+
+@keyframes move-right {
+    0% {
+        left: -310px;
+    }
+    50% {
+        left: 30px;
+    }
+    100% {
+        left: 80px;
+    }
 }
 
 .search-form h1{

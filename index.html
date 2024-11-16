@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <div class="progress-bar"></div>
-
+        
         <section class="lateral-bar-menus">
             <nav class="nav-bar">
                 <div class="navbar-left">
@@ -41,25 +41,25 @@
                         <li>
                             <a href="">
                                 <img src="assets/icons/home_icon.svg" alt="Home" class="icon"  />
-                                <p class="cursor-pointer"><b>Home</b></p>
+                                <p id="home-paragraph" class="cursor-pointer"><b>Home</b></p>
                             </a>
                         </li>
                         <li>
                             <a href="" id="menu-search">
                                 <img src="./assets/icons/search40.svg" alt="Search" class="icon icon-menu width-icon" />
-                                <p>Search</p>
+                                <p id="search-paragraph">Search</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="./assets/icons/explore.svg" alt="Explore" class="icon margin-top-9" />
-                                <p>Explore</p>
+                                <p id="explore-paragraph">Explore</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="./assets/icons/video.svg" alt="Reels" class="icon margin-top-9" />
-                                <p>Reels</p>
+                                <p id="reels-paragraph">Reels</p>
                             </a>
                         </li>
                         <li class="gap-0">
@@ -68,19 +68,19 @@
                                 <div class="notifications-messages">
                                     <span>1</span>
                                 </div>
-                                <p>Messages</p>
+                                <p id="messages-paragraph">Messages</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="./assets/icons/favorite.svg" alt="Notifications" class="icon margin-top-9" />
-                                <p>Notifications</p>
+                                <p id="notifications-paragraph">Notifications</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="./assets/icons/add_rectangle.svg" alt="Create" class="icon margin-top-9" />
-                                <p>Create</p>
+                                <p id="create-paragraph">Create</p>
                             </a>
                         </li>
                         <li>
@@ -88,14 +88,14 @@
                                 <div class="img-profile-menu icon">
                                     <img src="./assets/img/avatar1.svg" alt="Profile" class="icon img-profile-menu">
                                 </div>
-                                <p>Profile</p>
+                                <p id="profile-paragraph">Profile</p>
                             </a>
                         </li>
                     </ul>
                     <div id="hamburguer-button" class="icon">
                         <a href="">
                             <img src="./assets/icons/hamburguer-menu.svg" alt="Messages" class="icon icon-menu" />
-                            <p>More</p>
+                            <p id="more-paragraph">More</p>
                         </a>
                     </div>
                     <span class="bottom-menu"></span>
@@ -282,7 +282,7 @@
             
         </main>
 
-        <!--<div class="search-form">
+        <div class="search-form hidden">
             <h1>Search</h1>
             <input type="text" name="" id="search" placeholder="Search">
             <div class="for-you-search"></div>
@@ -354,8 +354,8 @@
                     </div>
                 </div>
             </div>
-        </div>-->
-
+        </div>
+        
         <section class="right-accounts">
             <div class="suggested-accounts">
                 <ul class="accounts-list">

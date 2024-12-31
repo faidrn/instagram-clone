@@ -40,7 +40,8 @@
                     <ul class="lateral-menu">
                         <li>
                             <a href="">
-                                <img src="assets/icons/home_icon.svg" alt="Home" class="icon"  />
+                                <img id="home-black-icon" src="assets/icons/home_icon.svg" alt="Home" class="icon"  />
+                                <img id="home-white-icon" src="assets/icons/home-white-icon.svg" alt="Home" class="icon home-icom-white hidden"  />
                                 <p id="home-paragraph" class="cursor-pointer"><b>Home</b></p>
                             </a>
                         </li>
@@ -283,8 +284,17 @@
         </main>
 
         <div class="search-form hidden">
-            <h1>Search</h1>
-            <input type="text" name="" id="search" placeholder="Search">
+            <div class="head-search">
+                <h1>Search</h1>
+                <span class="icon-search-span">
+                    <img src="./assets/icons/search40.svg" alt="Search" class=" search-icon" />
+                </span>
+                <input type="text" name="" id="search" class="text-search" placeholder="Search">
+                <div class="remove-search hidden">
+                    <span>X</span>
+                </div>
+            </div>
+            
             <div class="for-you-search"></div>
             <div class="not-personalized"></div>
             <div class="list-result-search">

@@ -13,6 +13,11 @@ const profileParagraph = document.querySelector('#profile-paragraph');
 const moreParagraph = document.querySelector('#more-paragraph');
 const tagLi = document.getElementsByTagName('li');
 const searchForm = document.querySelector('.search-form');
+const homeBlackIcon = document.getElementById('home-black-icon');
+const homeWhiteIcon = document.getElementById('home-white-icon');
+const searchIcon = document.querySelector('.search-icon');
+const textSearch = document.getElementById('search');
+const removeSearch = document.querySelector('.remove-search');
 
 
 const menuSearchClickCallback = (event) => {
@@ -30,11 +35,28 @@ const menuSearchClickCallback = (event) => {
     profileParagraph.classList.toggle('hidden');
     moreParagraph.classList.toggle('hidden');
     tagLi[1].classList.toggle('border-gray');
+    homeBlackIcon.classList.toggle('hidden');
+    homeWhiteIcon.classList.toggle('hidden');
 
     // Show search form
     searchForm.classList.toggle('hidden');
     searchForm.classList.toggle('move-right-search-form');
 };
 
+textSearch.addEventListener('focus', () => {
+    searchIcon.classList.add('hidden');
+    removeSearch.classList.remove('hidden');
+    removeSearch.classList.add('cursor-pointer');
+});
+
+textSearch.addEventListener('focusout', () => {
+    searchIcon.classList.remove('hidden');
+    removeSearch.classList.add('hidden');
+    removeSearch.classList.remove('cursor-pointer');
+});
+
+removeSearch.addEventListener('click', () => {
+  alert('¡Div convertido en botón!');
+});
 
 menuSearch.addEventListener('click', menuSearchClickCallback);
